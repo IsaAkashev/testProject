@@ -2671,13 +2671,13 @@
   resolved "https://dzo.sw.sbc.space/nexus-ci/repository/npm-public/@react-dnd/shallowequal/-/shallowequal-4.0.2.tgz#d1b4befa423f692fa4abf1c79209702e7d8ae4b4"
   integrity sha1-0bS++kI/aS+kq/HHkglwLn2K5LQ=
 
-"@reduxjs/toolkit@1.5.0":
-  version "1.5.0"
-  resolved "https://dzo.sw.sbc.space/nexus-ci/repository/npm-public/@reduxjs/toolkit/-/toolkit-1.5.0.tgz#1025c1ccb224d1fc06d8d98a61f6717d57e6d477"
-  integrity sha1-ECXBzLIk0fwG2NmKYfZxfVfm1Hc=
+"@reduxjs/toolkit@1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@reduxjs/toolkit/-/toolkit-1.6.2.tgz#2f2b5365df77dd6697da28fdf44f33501ed9ba37"
+  integrity sha512-HbfI/hOVrAcMGAYsMWxw3UJyIoAS9JTdwddsjlr5w3S50tXhWb+EMyhIw+IAvCVCLETkzdjgH91RjDSYZekVBA==
   dependencies:
-    immer "^8.0.0"
-    redux "^4.0.0"
+    immer "^9.0.6"
+    redux "^4.1.0"
     redux-thunk "^2.3.0"
     reselect "^4.0.0"
 
@@ -8357,10 +8357,10 @@ immer@1.10.0:
   resolved "https://dzo.sw.sbc.space/nexus-ci/repository/npm-public/immer/-/immer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
   integrity sha1-utZ2BbqcgQJ12R4cKkfUWC6YKG0=
 
-immer@^8.0.0:
-  version "8.0.4"
-  resolved "https://dzo.sw.sbc.space/nexus-ci/repository/npm-public/immer/-/immer-8.0.4.tgz#3a21605a4e2dded852fb2afd208ad50969737b7a"
-  integrity sha1-OiFgWk4t3thS+yr9IIrVCWlze3o=
+immer@^9.0.6:
+  version "9.0.21"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.21.tgz#1e025ea31a40f24fb064f1fef23e931496330176"
+  integrity sha512-bc4NBHqOqSfRW7POMkHd51LvClaeMXpm8dx0e8oE2GORbq5aRK7Bxl4FyzVLdGtLmvLKL7BTDBG5ACQm4HWjTA==
 
 immutable@3.8.2, immutable@^3.8.2:
   version "3.8.2"
@@ -13378,7 +13378,7 @@ redux@^4.0.0, redux@^4.0.4:
   dependencies:
     "@babel/runtime" "^7.9.2"
 
-redux@^4.2.0:
+redux@^4.1.0, redux@^4.2.0:
   version "4.2.1"
   resolved "https://dzo.sw.sbc.space/nexus-ci/repository/npm-public/redux/-/redux-4.2.1.tgz#c08f4306826c49b5e9dc901dee0452ea8fce6197"
   integrity sha1-wI9DBoJsSbXp3JAd7gRS6o/OYZc=
