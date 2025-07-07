@@ -1,144 +1,36 @@
 {
-  "author": "PVM Indicator",
-  "license": "Apache-2.0",
-  "name": "@pvm-ui/pvm-ui-components",
-  "version": "2.2.0",
-  "description": "PVM Indicator Components",
-  "keywords": [
-    "pvm",
-    "react",
-    "react-component",
-    "typescript"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://dzo.sw.sbc.space/bitbucket-ci/projects/INDA/repos/pvm_ui/"
-  },
-  "main": "dist/index",
-  "files": [
-    "dist"
-  ],
-  "typings": "dist/index",
-  "types": "dist/index.d.ts",
+  "name": "sbt-datasource-abyss",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "start": "yarn build-css && start-storybook -p 6007 --no-open --no-manager-cache",
-    "build": "rimraf ./dist && tsc -p tsconfig.build.json && webpack build -c ./webpack.scss.js",
-    "build-css": "webpack build -c ./webpack.css.js",
-    "clean": "rimraf ./dist ./storybook-static",
-    "lint": "eslint -c .eslintrc.js --ext .js,.jsx,.ts,.tsx .",
-    "lint:fix": "eslint -c .eslintrc.js --ignore-path .eslintignore --fix",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,md,mdx,json}\" --config ./.prettierrc --ignore-path ./.prettierignore",
-    "typecheck": "tsc --noEmit",
-    "build-storybook": "yarn build-css && build-storybook",
-    "pre-commit": "lint-staged",
-    "prepare": "husky install",
-    "prettier:write": "prettier --list-different \"**/*.{ts,tsx,scss,js,mdx}\" --write",
-    "prepublish": "yarn run build"
+    "build": "grafana-toolkit plugin:build --coverage",
+    "test": "grafana-toolkit plugin:test --coverage",
+    "dev": "grafana-toolkit plugin:dev",
+    "watch": "grafana-toolkit plugin:dev --watch",
+    "lint:fix": "eslint \"src/**/*.{js,tsx,ts}\" --fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.(ts|tsx|js|jsx)": [
-      "prettier --write",
-      "eslint --ignore-path .eslintignore --fix --quiet"
-    ],
-    "*.scss": [
-      "prettier --write"
-    ],
-    "*.json": [
-      "prettier --write"
-    ]
-  },
-  "peerDependencies": {
-    "moment": ">=2.24.0",
-    "react": ">=17.0.0",
-    "react-dom": ">=17.0.0"
-  },
-  "dependencies": {
-    "@popperjs/core": "2.11.8",
-    "@sber-ssp-ui/pv-icons": "1.5.16",
-    "@tanstack/react-table": "8.17.3",
-    "antd": "4.24.16",
-    "classnames": "2.5.1",
-    "focus-trap-react": "10.1.4",
-    "history": "4.10.1",
-    "lodash": "4.17.21",
-    "numeral": "2.0.6",
-    "react-dnd": "16.0.1",
-    "react-dnd-html5-backend": "16.0.1",
-    "react-popper": "2.3.0",
-    "react-virtual": "2.10.4"
-  },
+  "author": "SberTech O&M Indicator",
+  "license": "Apache-2.0",
   "devDependencies": {
-    "@babel/cli": "7.18.10",
-    "@babel/core": "7.18.13",
-    "@babel/plugin-transform-typescript": "7.18.12",
-    "@babel/preset-env": "7.18.10",
-    "@babel/preset-react": "7.18.6",
-    "@babel/preset-typescript": "7.18.6",
-    "@faker-js/faker": "7.6.0",
-    "@storybook/addon-actions": "6.5.16",
-    "@storybook/addon-docs": "6.5.16",
-    "@storybook/addon-essentials": "6.5.16",
-    "@storybook/addon-links": "6.5.16",
-    "@storybook/builder-webpack5": "6.5.16",
-    "@storybook/client-api": "6.5.16",
-    "@storybook/manager-webpack5": "6.5.16",
-    "@storybook/react": "6.5.16",
-    "@storybook/testing-library": "0.0.9",
-    "@storybook/theming": "6.5.16",
-    "@types/classnames": "2.3.1",
-    "@types/history": "4.7.8",
-    "@types/jest": "26.0.15",
-    "@types/lodash": "4.14.123",
-    "@types/node": "13.7.0",
-    "@types/numeral": "2.0.2",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0",
-    "@typescript-eslint/eslint-plugin": "5.62.0",
-    "@typescript-eslint/parser": "5.62.0",
-    "babel-loader": "8.2.3",
-    "babel-plugin-import": "1.13.5",
-    "babel-plugin-lodash": "3.3.4",
-    "babel-preset-proposal-typescript": "3.0.0",
-    "css-loader": "6.8.1",
-    "css-minimizer-webpack-plugin": "5.0.1",
-    "eslint": "8.44.0",
-    "eslint-config-airbnb-typescript": "16.1.0",
-    "eslint-config-prettier": "8.7.0",
-    "eslint-plugin-import": "2.25.4",
-    "eslint-plugin-jest": "26.1.1",
-    "eslint-plugin-jsx-a11y": "6.7.1",
-    "eslint-plugin-mdx": "1.16.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-react": "7.29.2",
-    "eslint-plugin-react-hooks": "4.3.0",
-    "eslint-plugin-testing-library": "5.10.2",
-    "husky": "7.0.4",
-    "lint-staged": "12.3.5",
-    "mini-css-extract-plugin": "2.9.0",
-    "prettier": "2.8.4",
-    "react-docgen-typescript-plugin": "1.0.8",
-    "sass": "1.77.4",
-    "sass-loader": "12.6.0",
-    "storybook-addon-themes": "6.1.0",
-    "style-loader": "3.3.1",
-    "ts-loader": "9.4.2",
-    "tslib": "2.3.1",
-    "typescript": "4.9.5",
-    "webpack": "5.94.0",
-    "webpack-bundle-analyzer": "4.5.0",
-    "webpack-cli": "4.10.0",
-    "webpack-remove-empty-scripts": "0.7.3",
-    "yarn-audit-fix": "^10.0.7",
-    "yarn-audit-html": "^7.3.2" 
+    "@grafana/data": "7.5.10",
+    "@grafana/runtime": "7.5.10",
+    "@grafana/toolkit": "7.5.10",
+    "@grafana/ui": "7.5.10",
+    "@types/lodash": "4.14.149",
+    "@types/prismjs": "^1.16.5",
+    "jest-sonar-reporter": "^2.0.0"
   },
   "resolutions": {
-    "moment": "2.29.4",
-    "**/react": "18.3.1",
-    "**/react-dom": "18.3.1"
+    "rxjs": "6.6.3"
+  },
+  "dependencies": {
+    "prismjs": "^1.30.0",
+    "react-virtualized-auto-sizer": "^1.0.6",
+    "tslib": "^2.2.0"
+  },
+  "jestSonar": {
+    "reportPath": "coverage",
+    "reportFile": "sonar-report.xml",
+    "indent": 4
   }
 }
