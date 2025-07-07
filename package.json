@@ -1,32 +1,46 @@
 {
-  "name": "sbt-datasource-abyss",
-  "version": "1.0.0",
-  "description": "",
+  "name": "grafana-app-ml-ver5",
+  "version": "1.1.0",
+  "description": "Panel app with baseline Ver5",
   "scripts": {
     "build": "grafana-toolkit plugin:build --coverage",
     "test": "grafana-toolkit plugin:test --coverage",
     "dev": "grafana-toolkit plugin:dev",
     "watch": "grafana-toolkit plugin:dev --watch",
-    "lint:fix": "eslint \"src/**/*.{js,tsx,ts}\" --fix"
+    "pretty": "prettier --list-different \"src/**/*.{ts,tsx,scss,js}\" --write",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx,scss,js}\" --fix"
   },
-  "author": "SberTech O&M Indicator",
-  "license": "Apache-2.0",
+  "author": "PVM Indicator",
+  "license": "MIT",
   "devDependencies": {
     "@grafana/data": "7.5.10",
     "@grafana/runtime": "7.5.10",
     "@grafana/toolkit": "7.5.10",
-    "@grafana/ui": "7.5.10",
-    "@types/lodash": "4.14.149",
-    "@types/prismjs": "^1.16.5",
-    "jest-sonar-reporter": "^2.0.0"
-  },
-  "resolutions": {
-    "rxjs": "6.6.3"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.1",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/enzyme": "^3.10.9",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/react": "^17.0.9",
+    "@types/react-redux": "7.1.7",
+    "@types/react-router-dom": "5.1.7",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "jest-sonar-reporter": "^2.0.0",
+    "msw": "^0.35.0",
+    "react-test-renderer": "^17.0.2",
+    "tslib": "^2.2.0"
   },
   "dependencies": {
-    "prismjs": "^1.30.0",
-    "react-virtualized-auto-sizer": "^1.0.6",
-    "tslib": "^2.2.0"
+    "@babel/preset-env": "7.27.1",
+    "@babel/preset-react": "7.27.1",
+    "@babel/preset-typescript": "7.27.1",
+    "@pvm-ui/pvm-ui-components": "1.0.17",
+    "@reduxjs/toolkit": "1.5.0",
+    "antd": "4.24.8",
+    "identity-obj-proxy": "3.0.0",
+    "react-redux": "7.2.0",
+    "react-router-dom": "5.2.0"
   },
   "jestSonar": {
     "reportPath": "coverage",
