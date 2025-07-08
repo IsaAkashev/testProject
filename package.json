@@ -21,7 +21,10 @@
   "devDependencies": {
     "@grafana/toolkit": "7.5.10",
     "emotion": "10.0.27",
-    "jest-sonar-reporter": "^2.0.0"
+    "jest-sonar-reporter": "^2.0.0",
+    "@grafana/data": "7.5.10",
+    "@grafana/runtime": "7.5.10",
+    "@grafana/ui": "7.5.10"
   },
   "engines": {
     "node": ">=12"
@@ -30,9 +33,6 @@
     "antd": "4.24.5",
     "@types/jquery": "^3.5.3",
     "jquery": "^3.5.1",
-    "@grafana/data": "7.5.10",
-    "@grafana/runtime": "7.5.10",
-    "@grafana/ui": "7.5.10",
     "@pvm-ui/pvm-ui-components": "0.7.10"
   },
   "jestSonar": {
