@@ -1,39 +1,46 @@
 {
-  "name": "sbt-flash-and-beep",
-  "version": "1.0.0",
-  "description": "",
+  "name": "grafana-app-ml-ver5",
+  "version": "1.1.0",
+  "description": "Panel app with baseline Ver5",
   "scripts": {
     "build": "grafana-toolkit plugin:build --coverage",
     "test": "grafana-toolkit plugin:test --coverage",
     "dev": "grafana-toolkit plugin:dev",
     "watch": "grafana-toolkit plugin:dev --watch",
-    "lint": "eslint --ext .js,.tsx,.ts \"src\"",
-    "lint:fix": "eslint --ext .js,.tsx,.ts \"src\" --fix",
-    "pretty": "prettier --write \"**/*.{tsx,ts}\""
+    "pretty": "prettier --list-different \"src/**/*.{ts,tsx,scss,js}\" --write",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx,scss,js}\" --fix"
   },
-  "repository": "github:grafana/simple-react-panel",
-  "author": "indicator",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/grafana/simple-react-panel/issues",
-    "email": "plugins@grafana.com"
-  },
+  "author": "PVM Indicator",
+  "license": "MIT",
   "devDependencies": {
-    "@grafana/toolkit": "7.5.10",
-    "emotion": "10.0.27",
-    "jest-sonar-reporter": "^2.0.0",
     "@grafana/data": "7.5.10",
     "@grafana/runtime": "7.5.10",
-    "@grafana/ui": "7.5.10"
-  },
-  "engines": {
-    "node": ">=12"
+    "@grafana/toolkit": "7.5.10",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.1",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/enzyme": "^3.10.9",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/react": "^17.0.9",
+    "@types/react-redux": "7.1.7",
+    "@types/react-router-dom": "5.1.7",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "jest-sonar-reporter": "^2.0.0",
+    "msw": "^0.35.0",
+    "react-test-renderer": "^17.0.2",
+    "tslib": "^2.2.0"
   },
   "dependencies": {
-    "antd": "4.24.5",
-    "@types/jquery": "^3.5.3",
-    "jquery": "^3.5.1",
-    "@pvm-ui/pvm-ui-components": "0.7.10"
+    "@babel/preset-env": "7.27.1",
+    "@babel/preset-react": "7.27.1",
+    "@babel/preset-typescript": "7.27.1",
+    "@pvm-ui/pvm-ui-components": "1.0.17",
+    "@reduxjs/toolkit": "1.6.2",
+    "antd": "4.24.8",
+    "identity-obj-proxy": "3.0.0",
+    "react-redux": "7.2.0",
+    "react-router-dom": "5.2.0"
   },
   "jestSonar": {
     "reportPath": "coverage",
