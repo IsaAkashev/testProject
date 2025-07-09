@@ -46,5 +46,10 @@
     "reportPath": "coverage",
     "reportFile": "sonar-report.xml",
     "indent": 4
+  },
+  "resolutions": {
+    "moment": "2.29.4",
+    "@babel/runtime": "7.26.10",
+    "path-to-regexp": "0.1.10"
   }
 }
