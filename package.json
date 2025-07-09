@@ -36,11 +36,11 @@
     "@babel/preset-react": "7.27.1",
     "@babel/preset-typescript": "7.27.1",
     "@pvm-ui/pvm-ui-components": "1.0.17",
-    "@reduxjs/toolkit": "1.6.2",
-    "antd": "4.24.8",
+    "@reduxjs/toolkit": "2.0.0",
+    "antd": "5.12.7",
     "identity-obj-proxy": "3.0.0",
-    "react-redux": "7.2.0",
-    "react-router-dom": "5.2.0"
+    "react-redux": "9.0.0",
+    "react-router-dom": "6.0.0"
   },
   "jestSonar": {
     "reportPath": "coverage",
