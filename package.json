@@ -27,7 +27,7 @@
     "node": ">=12"
   },
   "dependencies": {
-    "antd": "4.24.5",
+    "antd": "4.24.13",
     "@types/jquery": "^3.5.3",
     "jquery": "^3.5.1",
     "@grafana/data": "7.5.10",
