@@ -61,7 +61,7 @@
     "@popperjs/core": "2.11.8",
     "@sber-ssp-ui/pv-icons": "1.5.16",
     "@tanstack/react-table": "8.17.3",
-    "antd": "4.24.16",
+    "antd": "5.12.7",
     "classnames": "2.5.1",
     "focus-trap-react": "10.1.4",
     "history": "4.10.1",
