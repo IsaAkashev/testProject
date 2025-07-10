@@ -39,7 +39,7 @@
     "uplot": "1.6.31",
     "cross-spawn": "6.0.6",
     "moment": "2.29.4",
-    "lodash": "4.17.20",
+    "lodash": "4.17.21",
     "ansi-regex": "6.0.1",
     "decode-uri-component": "0.2.2",
     "@babel/runtime": "7.26.10",
@@ -50,7 +50,8 @@
     "marked": "4.0.10",
     "path-parse": "1.0.7",
     "path-to-regexp": "1.9.0",
-    "debug": "2.6.9"
+    "debug": "2.6.9",
+    "semver": "7.5.2"
   },
   "jestSonar": {
     "reportPath": "coverage",
