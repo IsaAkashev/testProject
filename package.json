@@ -1,5 +1,5 @@
 {
-  "name": "sbt-datasource-abyss",
+  "name": "sbt-flash-and-beep",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -7,26 +7,51 @@
     "test": "grafana-toolkit plugin:test --coverage",
     "dev": "grafana-toolkit plugin:dev",
     "watch": "grafana-toolkit plugin:dev --watch",
-    "lint:fix": "eslint \"src/**/*.{js,tsx,ts}\" --fix"
+    "lint": "eslint --ext .js,.tsx,.ts \"src\"",
+    "lint:fix": "eslint --ext .js,.tsx,.ts \"src\" --fix",
+    "pretty": "prettier --write \"**/*.{tsx,ts}\""
   },
-  "author": "SberTech O&M Indicator",
+  "repository": "github:grafana/simple-react-panel",
+  "author": "indicator",
   "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/grafana/simple-react-panel/issues",
+    "email": "plugins@grafana.com"
+  },
   "devDependencies": {
-    "@grafana/data": "7.5.10",
-    "@grafana/runtime": "7.5.10",
     "@grafana/toolkit": "7.5.10",
-    "@grafana/ui": "7.5.10",
-    "@types/lodash": "4.14.149",
-    "@types/prismjs": "^1.16.5",
+    "emotion": "10.0.27",
     "jest-sonar-reporter": "^2.0.0"
   },
-  "resolutions": {
-    "rxjs": "6.6.3"
+  "engines": {
+    "node": ">=12"
   },
   "dependencies": {
-    "prismjs": "^1.30.0",
-    "react-virtualized-auto-sizer": "^1.0.6",
-    "tslib": "^2.2.0"
+    "antd": "4.24.5",
+    "@types/jquery": "^3.5.3",
+    "jquery": "^3.5.1",
+    "@grafana/data": "7.5.10",
+    "@grafana/runtime": "7.5.10",
+    "@grafana/ui": "7.5.10",
+    "@pvm-ui/pvm-ui-components": "0.7.10"
+  },
+  "resolutions": {
+    "uplot": "1.6.31",
+    "cross-spawn": "6.0.6",
+    "moment": "2.29.4",
+    "lodash": "4.17.21",
+    "ansi-regex": "5.0.1",
+    "decode-uri-component": "0.2.2",
+    "@babel/runtime": "7.26.10",
+    "@babel/runtime-corejs3": "7.26.10",
+    "@braintree/sanitize-url": "6.0.1",
+    "xss": "1.0.10",
+    "d3-color": "3.1.0",
+    "marked": "4.0.10",
+    "path-parse": "1.0.7",
+    "path-to-regexp": "1.9.0",
+    "debug": "2.6.9",
+    "semver": "7.5.2"
   },
   "jestSonar": {
     "reportPath": "coverage",
