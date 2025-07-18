@@ -9,7 +9,9 @@
     "watch": "grafana-toolkit plugin:dev --watch",
     "lint": "eslint --ext .js,.tsx,.ts \"src\"",
     "lint:fix": "eslint --ext .js,.tsx,.ts \"src\" --fix",
-    "pretty": "prettier --write \"**/*.{tsx,ts}\""
+    "pretty": "prettier --write \"**/*.{tsx,ts}\"",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": "github:grafana/simple-react-panel",
   "author": "indicator",
@@ -27,13 +29,14 @@
     "node": ">=12"
   },
   "dependencies": {
-    "antd": "4.24.5",
+    "antd": "5.12.7",
     "@types/jquery": "^3.5.3",
     "jquery": "^3.5.1",
-    "@grafana/data": "7.5.10",
-    "@grafana/runtime": "7.5.10",
-    "@grafana/ui": "7.5.10",
-    "@pvm-ui/pvm-ui-components": "0.7.10"
+    "@grafana/data": "9.3.1",
+    "@grafana/runtime": "11.6.0",
+    "@grafana/ui": "11.6.0",
+    "@pvm-ui/pvm-ui-components": "0.7.10",
+    "@snyk/protect": "latest"
   },
   "resolutions": {
     "uplot": "1.6.31",
@@ -57,5 +60,6 @@
     "reportPath": "coverage",
     "reportFile": "sonar-report.xml",
     "indent": 4
-  }
+  },
+  "snyk": true
 }
