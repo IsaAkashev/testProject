@@ -97,7 +97,7 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.1.14"
   },
-  "resolutions": {
-    "loader-utils": "^1.4.2"
+ "overrides": {
+    "loader-utils": "1.4.2"
   }
 }
