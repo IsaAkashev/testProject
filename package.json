@@ -30,7 +30,7 @@
     "tslib": "^2.2.0"
   },
   "dependencies": {
-    "antd": "4.15.2",
+    "antd": "4.17.0",
     "react-router-dom": "5.2.0"
   },
   "jestSonar": {
