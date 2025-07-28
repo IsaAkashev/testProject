@@ -30,7 +30,7 @@
     "tslib": "^2.2.0"
   },
   "dependencies": {
-    "antd": "4.17.2",
+    "antd": "4.17.0",
     "react-router-dom": "5.2.0"
   },
   "jestSonar": {
@@ -43,5 +43,11 @@
       "^~/(.*)$": "<rootDir>/src/$1",
       "^@utils/(.*)$": "<rootDir>/src/utils/$1"
     }
+  },
+  "resolutions": {
+    "async-validator": "4.0.4",
+    "moment": "^2.29.1",
+    "@babel/runtime": "7.26.10",
+    "path-to-regexp": "0.1.10"
   }
 }
