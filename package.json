@@ -45,15 +45,5 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4"
   },
-  "overrides": {
-    "lodash": "4.17.21",
-    "@babel/traverse": "^7.23.2",
-    "semver": "5.97.2",
-    "@babel/helper": "7.26.10",
-    "minimist": "0.2.4",
-    "browserslist": "4.16.5",
-    "path-parse": "1.0.7",
-    "debug": "2.6.9"
-  },
   "homepage": "https://github.com/briangann/grafana-datatable-panel"
 }
