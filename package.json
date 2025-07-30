@@ -17,7 +17,9 @@
     "url": "https://github.com/briangann/grafana-datatable-panel/issues"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.4",
     "@babel/plugin-transform-modules-systemjs": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "browser-sync": "^2.26.3",
     "del": "^4.0.0",
     "grunt": "^1.0.3",
@@ -37,13 +39,8 @@
     "grunt-systemjs-builder": "^1.0.0",
     "grunt-ts": "^6.0.0-beta.22",
     "load-grunt-tasks": "~4.0.0",
-    "lodash": "^4.17.11",
     "minimatch": "3.0.4",
     "typescript": "^3.3.3333"
-  },
-  "dependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4"
   },
   "homepage": "https://github.com/briangann/grafana-datatable-panel"
 }
