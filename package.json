@@ -5,7 +5,9 @@
   "description": "Grafana Datatable Panel",
   "main": "module.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -43,7 +45,9 @@
   },
   "dependencies": {
     "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4"
+    "@babel/preset-env": "^7.3.4",
+    "@snyk/protect": "latest"
   },
-  "homepage": "https://github.com/briangann/grafana-datatable-panel"
+  "homepage": "https://github.com/briangann/grafana-datatable-panel",
+  "snyk": true
 }
