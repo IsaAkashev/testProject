@@ -10,9 +10,9 @@
   "author": "Grafana Labs",
   "license": "Apache",
   "dependencies": {
-    "grunt-cli": "^1.2.0",
-    "lodash": "^4.17.4",
-    "moment": "^2.18.1",
+    "grunt-cli": "^1.3.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
     "q": "^1.5.0",
     "systemjs": "^0.19.47"
   },
