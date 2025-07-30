@@ -1,40 +1,49 @@
 {
-  "name": "sbertech-solr-grafana-plugin-final",
-  "version": "0.0.1",
-  "description": "Solr plugin developed in sbertech.",
+  "name": "briangann-datatable-panel",
+  "private": true,
+  "version": "0.0.6",
+  "description": "Grafana Datatable Panel",
+  "main": "module.js",
   "scripts": {
-    "build": "grunt",
-    "watch": "grunt watch",
-    "test": "./node_modules/karma/bin/karma start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Grafana Labs",
-  "license": "Apache",
-  "dependencies": {
-    "grunt-cli": "^1.3.0",
-    "lodash": "^4.17.21",
-    "moment": "^2.29.4",
-    "q": "^1.5.0",
-    "systemjs": "^0.19.47"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briangann/grafana-datatable-panel.git"
+  },
+  "author": "Brian Gann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/briangann/grafana-datatable-panel/issues"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.74",
-    "grafana-sdk-mocks": "git+https://github.com/grafana/grafana-sdk-mocks.git",
+    "@babel/plugin-transform-modules-systemjs": "^7.3.4",
+    "browser-sync": "^2.26.3",
+    "del": "^4.0.0",
     "grunt": "^1.0.3",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-string-replace": "^1.3",
-    "grunt-typescript": "^0.8.0",
-    "karma": "^1.7.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-expect": "^1.1.3",
-    "karma-mocha": "^1.3.0",
-    "karma-sinon": "^1.0.5",
-    "karma-systemjs": "^0.16.0",
-    "load-grunt-tasks": "^3.5.2",
-    "mocha": "^5.1.1",
-    "plugin-typescript": "^7.1.0",
-    "sinon": "^3.2.1",
-    "systemjs-plugin-css": "^0.1.35"
-  }
+    "grunt-babel": "^8.0.0",
+    "grunt-cli": "^1.3.2",
+    "grunt-contrib-clean": "~2.0.0",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "~4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-css-selectors": "^1.3.0",
+    "grunt-execute": "~0.2.2",
+    "grunt-force-task": "^2.0.0",
+    "grunt-multi-dest": "^1.0.0",
+    "grunt-package-modules": "^1.0.0",
+    "grunt-systemjs-builder": "^1.0.0",
+    "grunt-ts": "^6.0.0-beta.22",
+    "load-grunt-tasks": "~4.0.0",
+    "lodash": "^4.17.11",
+    "minimatch": "3.0.4",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4"
+  },
+  "homepage": "https://github.com/briangann/grafana-datatable-panel"
 }
