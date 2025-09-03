@@ -50,7 +50,7 @@
     "@module-federation/enhanced": "0.18.3",
     "@pvm-ui/pvm-core": "1.8.0",
     "@pvm-ui/pvm-navigation": "1.0.0",
-    "@reduxjs/toolkit": "1.5.0",
+    "@reduxjs/toolkit": "1.6.0",
     "@sds-eng/base": "1.6.0",
     "antd": "4.24.16",
     "axios": "1.11.0",
